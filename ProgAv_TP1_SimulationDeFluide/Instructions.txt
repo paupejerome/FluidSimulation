@@ -1,0 +1,47 @@
+Ouvrir le projet dans VS et configurer SDL
+==========================================
+
+**Créer le projet**
+
+1. Créer un nouveau projet (vide) dans VS
+2. Copier les fichiers du code.zip dans votre dossier de projet
+3. Drag-n-drop les fichiers .cpp dans "Fichiers source" et les
+   fichiers .h dans "Fichiers d'en-tête"
+
+
+**Télécharger SDL**
+
+4. Rendez-vous sur https://libsdl.org/download-2.0.php
+5. Téléchargez les **Development Libraries** pour Windows (Visual C++)
+   et dézippez le dossier quelque part sur votre ordinateur (ex.: dans
+   C:\Users\Nicolas\)
+
+
+**Configurez le projet pour SDL**
+
+
+6. Allez dans le menu Projet > Propriétés. Choisissez
+
+   Configuration: Toutes les configurations
+   Plateforme: x64 (on va travailler en 64 bits)
+
+7. Sous le menu Éditeurs de liens (ou Linker), puis entrée (input),
+   modifiez "Dépendances supplémentaires" pour :
+
+http://165.227.34.49/~g316k/screen/10062c78184ebe08f7bddc682c84dd04.png
+
+
+8. Sous le menu Répertoires VC++, modifiez "Répertoires Include" pour
+   mettre le chemin complet du sous-dossier SDL2-2.0.16\include\ :
+
+http://165.227.34.49/~g316k/screen/9150081c1465ff61c3d14c313b7d7848.png
+
+
+9. Même menu, modifiez également "Répertoires de bibliothèques" pour
+   mettre le chemin vers SDL2-2.0.16\lib\x64\ :
+
+http://165.227.34.49/~g316k/screen/8fc910f18884df3669349fb204ea3bba.png
+
+
+10. Copiez le fichier SDL2-2.0.16\lib\x64\SDL2.dll à côté de vos
+    fichiers de code dans le projet VS

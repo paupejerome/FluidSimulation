@@ -1,0 +1,130 @@
+//////////////////////////////////////////////////////////////////////
+
+// OLD void ParticleManager::computeDensityPressure()
+    for (int indexVec1=0; indexVec1 < grid.size(); indexVec1++)
+    {
+        for (int indexPtr1 = 0; indexPtr1 < grid.at(indexVec1).size(); indexPtr1++)
+        {
+            Particle* particleA = grid.at(indexVec1).at(indexPtr1);
+
+
+
+            for (int z = 0; z < 9; z++)
+            {
+                int indexVec2 = indexVec1;
+                if (z == 0)
+                    indexVec2 += -46;
+                if (z == 1)
+                    indexVec2 += -45;
+                if (z == 2)
+                    indexVec2 += -44;
+                if (z == 3)
+                    indexVec2 += -1;
+                if (z == 4)
+                    indexVec2 += 0;
+                if (z == 5)
+                    indexVec2 += +1;
+                if (z == 6)
+                    indexVec2 += +44;
+                if (z == 7)
+                    indexVec2 += +45;
+                if (z == 8)
+                    indexVec2 += +46;
+
+                if(! (indexVec2 < 0 || indexVec2 > 1350 ))
+                {
+
+                    for (int indexPtr2 = 0; indexPtr2 < grid.at(indexVec2).size(); indexPtr2++)
+                    {
+                        if (indexPtr1 == indexPtr2 && indexVec1 == indexVec2)
+                        {
+                            particleA->rho = 0.f;
+
+                            Particle* particleB = grid.at(indexVec2).at(indexPtr2);
+
+                            double distance = sqrt(
+                                pow(particleB->x - particleA->x, 2) +
+                                pow(particleB->y - particleA->y, 2));
+
+                            if (distance < H)
+                            {
+                                particleA->rho += MASS * POLY6 * pow(pow(H, 2) - pow(distance, 2), 3.f);
+                            }
+
+                            particleA->p = GAS_CONST * (particleA->rho - REST_DENS);
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+    }
+// OLD void ParticleManager::computeDensityPressure()
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+//VERSION ORIGINAL BEGIN : void ParticleManager::computeDensityPressure
+    //// Pour chaque particule
+    //for(auto &pi : particles)
+    //{
+    //    pi.rho = 0.f;
+    //    // Chercher toutes les particules qui contribuent à la
+    //    // pression/densité
+    //    for(auto &pj : particles)
+    //    {
+    //        double distance = sqrt(
+    //            pow(pj.x - pi.x, 2) +
+    //            pow(pj.y - pi.y, 2));
+    //        if (distance < H)
+    //        {
+    //            // this computation is symmetric
+    //            pi.rho += MASS * POLY6 * pow(pow(H, 2) - pow(distance, 2), 3.f);
+    //        }
+    //    }
+    //    pi.p = GAS_CONST*(pi.rho - REST_DENS);
+    //}
+//VERSION ORIGINAL END
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// OLD void ParticleManager::computeForces()
+{
+    // Pour chaque particule
+    for(auto &pi : particles) {
+        double pressure_x = 0.f;
+        double pressure_y = 0.f;
+
+        double viscosity_x = 0.f;
+        double viscosity_y = 0.f;
+
+        // Calculer la somme des forces de viscosité et pression
+        // appliquées par les autres particules
+        for(auto &pj : particles) {
+            if(&pi == &pj)
+                continue;
+
+            double r = sqrt(
+                pow(pj.x - pi.x, 2) +
+                pow(pj.y - pi.y, 2));
+
+            if(r < H) {
+                // compute pressure force contribution
+                double fpress = MASS * (pi.p + pj.p) / (2.0 * pj.rho) * SPIKY_GRAD * pow(H-r, 2.0);
+                pressure_x += (pi.x - pj.x) / r * fpress;
+                pressure_y += (pi.y - pj.y) / r * fpress;
+
+                // compute viscosity force contribution
+                viscosity_x += VISC * MASS * (pj.vx - pi.vx) / pj.rho * VISC_LAP * (H-r);
+                viscosity_y += VISC * MASS * (pj.vy - pi.vy) / pj.rho * VISC_LAP * (H-r);
+            }
+        }
+
+        pi.fx = pressure_x + viscosity_x + ax * pi.rho;
+        pi.fy = pressure_y + viscosity_y + ay * pi.rho;
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////
+

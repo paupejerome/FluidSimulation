@@ -1,0 +1,49 @@
+﻿  Commands.cpp
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(99,27): warning C4244: 'initialisation' : conversion de 'const double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(100,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(101,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+  GameSPH.cpp
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(99,27): warning C4244: 'initialisation' : conversion de 'const double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(100,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(101,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.h(26,34): error C3646: 'commandManager' : spécificateur de substitution inconnu
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.h(26,34): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(40,13): error C2065: 'control' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(43,13): error C2065: 'shift' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(50,13): error C2065: 'control' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(53,13): error C2065: 'shift' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(72,29): error C2065: 'Command' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(72,18): error C2923: 'std::shared_ptr' : 'Command' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(72,67): error C2061: erreur de syntaxe : identificateur 'ChangeColorCommand'
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(72,84): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(73,13): error C2065: 'commandManager' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(78,17): error C2065: 'control' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(80,17): error C2065: 'commandManager' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(81,21): error C2065: 'shift' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(83,21): error C2065: 'commandManager' : identificateur non déclaré
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(90,64): error C2440: '=' : impossible de convertir de 'const char [21]' en 'RenderMode'
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(90,42): message : Aucun contexte dans lequel cette conversion est possible
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(94,69): error C2440: '=' : impossible de convertir de 'const char [26]' en 'RenderMode'
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(94,42): message : Aucun contexte dans lequel cette conversion est possible
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(98,59): error C2440: '=' : impossible de convertir de 'const char [16]' en 'RenderMode'
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.cpp(98,42): message : Aucun contexte dans lequel cette conversion est possible
+  main.cpp
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(99,27): warning C4244: 'initialisation' : conversion de 'const double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(100,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(101,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.h(26,34): error C3646: 'commandManager' : spécificateur de substitution inconnu
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\GameSPH.h(26,34): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  ParticleManager.cpp
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(99,27): warning C4244: 'initialisation' : conversion de 'const double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(100,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.h(101,28): warning C4244: 'initialisation' : conversion de 'double' en 'const int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(82,30): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(176,44): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(183,35): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(219,29): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(225,38): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(226,66): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(227,66): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(230,101): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(231,101): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(325,42): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données

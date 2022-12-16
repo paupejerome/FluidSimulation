@@ -1,0 +1,30 @@
+﻿  GameSPH.cpp
+  ParticleManager.cpp
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(142,39): warning C4018: '<' : incompatibilité signed/unsigned
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(144,43): warning C4018: '<' : incompatibilité signed/unsigned
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(174,55): warning C4018: '<' : incompatibilité signed/unsigned
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(197,39): warning C4018: '<' : incompatibilité signed/unsigned
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(199,43): warning C4018: '<' : incompatibilité signed/unsigned
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\ProgAv_TP1_SimulationDeFluide\ParticleManager.cpp(233,55): warning C4018: '<' : incompatibilité signed/unsigned
+  main.cpp
+  Génération de code en cours...
+Game.obj : error LNK2019: symbole externe non résolu _SDL_PollEvent référencé dans la fonction "public: void __thiscall Game::loop(struct SDL_Renderer *)" (?loop@Game@@QAEXPAUSDL_Renderer@@@Z)
+Game.obj : error LNK2019: symbole externe non résolu _SDL_GetTicks référencé dans la fonction "public: void __thiscall Game::loop(struct SDL_Renderer *)" (?loop@Game@@QAEXPAUSDL_Renderer@@@Z)
+Game.obj : error LNK2019: symbole externe non résolu _SDL_Delay référencé dans la fonction "public: void __thiscall Game::loop(struct SDL_Renderer *)" (?loop@Game@@QAEXPAUSDL_Renderer@@@Z)
+GameSPH.obj : error LNK2019: symbole externe non résolu _SDL_GetMouseState référencé dans la fonction "public: virtual void __thiscall GameSPH::handleInput(union SDL_Event const &)" (?handleInput@GameSPH@@UAEXABTSDL_Event@@@Z)
+GameSPH.obj : error LNK2019: symbole externe non résolu _SDL_SetRenderDrawColor référencé dans la fonction "public: virtual void __thiscall GameSPH::render(struct SDL_Renderer *)" (?render@GameSPH@@UAEXPAUSDL_Renderer@@@Z)
+ParticleManager.obj : error LNK2001: symbole externe non résolu _SDL_SetRenderDrawColor
+GameSPH.obj : error LNK2019: symbole externe non résolu _SDL_RenderClear référencé dans la fonction "public: virtual void __thiscall GameSPH::render(struct SDL_Renderer *)" (?render@GameSPH@@UAEXPAUSDL_Renderer@@@Z)
+GameSPH.obj : error LNK2019: symbole externe non résolu _SDL_RenderPresent référencé dans la fonction "public: virtual void __thiscall GameSPH::render(struct SDL_Renderer *)" (?render@GameSPH@@UAEXPAUSDL_Renderer@@@Z)
+main.obj : error LNK2019: symbole externe non résolu _SDL_GetError référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_CreateWindow référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_DestroyWindow référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_CreateRenderer référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_RenderSetLogicalSize référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_SetRenderDrawBlendMode référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_Init référencé dans la fonction _SDL_main
+main.obj : error LNK2019: symbole externe non résolu _SDL_Quit référencé dans la fonction _SDL_main
+ParticleManager.obj : error LNK2019: symbole externe non résolu _SDL_RenderDrawLine référencé dans la fonction "private: void __thiscall ParticleManager::renderGrid(struct SDL_Renderer *)" (?renderGrid@ParticleManager@@AAEXPAUSDL_Renderer@@@Z)
+ParticleManager.obj : error LNK2019: symbole externe non résolu _SDL_RenderFillRect référencé dans la fonction "private: void __thiscall ParticleManager::renderCells(struct SDL_Renderer *)" (?renderCells@ParticleManager@@AAEXPAUSDL_Renderer@@@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: symbole externe non résolu _main référencé dans la fonction "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\10-ProjetVolumineux\ProgAvance\TP1\ProgAv_TP1_SimulationDeFluide\Debug\ProgAv_TP1_SimulationDeFluide.exe : fatal error LNK1120: 18 externes non résolus
